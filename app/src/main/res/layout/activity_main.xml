@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_bg"
+    tools:context="com.anikesh.anonsoft.girl_proposal.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/yes_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/no_btn4"
+            android:layout_alignStart="@+id/no_btn4"
+            android:layout_marginBottom="48dp"
+            android:background="@color/colorPrimary"
+            android:onClick="design"
+            android:text="@string/yes"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/no_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/yes_btn"
+            android:layout_alignBottom="@+id/yes_btn"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_toEndOf="@+id/no_btn1"
+            android:onClick="design"
+            android:text="@string/no" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/no_btn2"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginTop="131dp"
+            android:text="@string/do_you_love_me"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/no_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="93dp"
+            android:layout_marginStart="59dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_toEndOf="@+id/yes_btn"
+            android:onClick="design"
+            android:text="@string/no"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/no_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignStart="@+id/no_btn4"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="61dp"
+            android:layout_marginStart="14dp"
+            android:onClick="design"
+            android:text="@string/no"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/no_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/no_btn2"
+            android:layout_alignEnd="@+id/textView"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:onClick="design"
+            android:text="@string/no"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/no_btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_above="@+id/no_btn1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:onClick="design"
+            android:text="@string/no"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/shohel"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:onClick="setValue"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/gaurav"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="setValue" />
+
+        <TextView
+            android:id="@+id/manish"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:onClick="setValue"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/reset"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/manish"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="reset" />
+
+        <TextView
+            android:id="@+id/admin"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/reset"
+            android:layout_alignBottom="@+id/reset"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="developer" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

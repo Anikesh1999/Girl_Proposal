@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Girl_Proposal</string>
+    <string name="do_you_love_me">Do You Love Me ...!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="next">Next</string>
+    <string name="ritesh_patel">Ritesh patel</string>
+    <string name="ritesh_khati_patel">Ritesh Khati Patel</string>
+    <string name="click_me">Click Me</string>
+    <string name="textview">TextView</string>
+</resources>
